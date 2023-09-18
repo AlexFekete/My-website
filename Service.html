@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <link rel="stylesheet" href="ServiceStyle.css">
+    <link rel="icon" type="image/png" href="./Service.png">
+
+</head>
+<body>
+
+    <header class="header">
+        <a class="logo">Service | Me</a>
+
+        <nav class="navbar">
+            <a href="Home.html">Home</a>
+            <a href="#" class="active">Service</a>
+        </nav>
+    </header>
+
+
+        <h3>You can find my services here</h3>
+        <p class="ppy">Please Scroll Down</p>
+        <h2 class="text">I website designer and Developer </h2>
+    <section>
+        <h2 class="InnerText">I website designer and Developer</h2>
+    </section> 
+
+
+    <div class="container2">
+        <h2  class="h2xdd" >What do I use for programming?</h2>
+
+            <p>
+                I mostly work in HTML in my free time at home. HTML is a very understandable language I watched a lot of HTML Tutorial videos 
+                And I even studied at school. <br> Creating a website, website designer...
+                <br>As I work I often just implement my thoughts
+
+                <br> <a href="" class="Url2"> My contact details</a>
+                <br> <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new" class="Urla1">Gmail fekeete.alex@gmail.com</a>
+                <br> <a href="https://www.instagram.com/iprodex/" class="Urla2">Instagram Iprodex</a>
+                <br> <a class="newbrtext">That's all I knew about myself. Good Bye</a>
+                <br>
+
+            </p>
+    </div>
+        <script>
+            let section = document.querySelector('section');
+            let text = document.querySelector('.text');
+            let InnerText = document.querySelector('.InnerText')
+            window.addEventListener('scroll', function() {
+                let value = window.scrollY;
+                section.style.clipPath = "circle("+ value +"px at center center)"
+                text.style.left = 100 - value / 5 + "%";
+                InnerText.style.left = 100 - value / 5 + "%";
+            })
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Open+Sans:wght@500&family=REM:ital,wght@1,500&family=Roboto+Mono:wght@200;300&family=Sorts+Mill+Goudy&family=Zilla+Slab:wght@500&display=swap');
+
+body::-webkit-scrollbar {
+    display: block;
+    width: 5px;
+    background: #131316;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #131316;
+    color: #fff;
+
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'REM', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Sorts Mill Goudy', serif;
+    font-family: 'Zilla Slab', serif;
+
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-20%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.h2color {
+    color: #7e9eff75;
+}
+
+h1 {
+    font-size: 50px;
+    color: #7e89ff86;
+
+}
+
+/*Navbar*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: rgb(107, 107, 255);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 1.1em;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #8688ff;
+}
+
+
+/*Text*/
+
+
+.abaut {
+    color: #ffffff;
+}
+
+
+/*bubbles*/
+
+
+.container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bubbles {
+    position: relative;
+    display: flex;
+}
+
+.bubbles span {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: #8688ff;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #8688ff44,
+    0 0 50PX #8688ff,
+    0 0 100px #8688ff;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(even)
+    {
+        background: #ff46e6;
+        box-shadow: 0 0 0 10px #ff46e644,
+        0 0 50PX #ff46e6,
+        0 0 100px #ff46e6;
+    }
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(1);
+    }
+}
+
+ /**/
+
+ .abaut2 {
+    position: relative;
+    font-size: 1.1em;
+    padding: 30px 10%;
+    width: 70%;
+    height: 110vh;
+ }
